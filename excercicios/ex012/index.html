@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Caveira.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tende abrir essse site em varios duspositivos diferentes ou simplismente aumente a diminua o tamanho do seu navegados.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5</p>
+    <audio preload="metadata" autoplay controls>
+        <source src="audio/mario-1.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="audio/mario-1.mp3"></a>Clica aqui para baixar o arquivo em MP3</p>
+    </audio>
+
+    <hr>
+
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedadp no meu próprio servidor.</p>
+
+    <video width="560" poster="imagens/capa -video.png" autoplay loop controls>
+        <source src="videos/Video01.mp4.mp4" type="video/mp4">
+        <source src="videos/Video01.mp4.mp4" type="video/mp4">
+        <source src="videos/Video01.webm.webm" type="video/webn">
+        <source src="videos/video001.ogv.ogv" type="video/ogg">
+        <p>Seu navergador não tem cimpatiilidade com reprodção de vídeos.</p>
+    </video>
+
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk?si=RlzKq0f1Nbpvf0JW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+</body>
+</html>
